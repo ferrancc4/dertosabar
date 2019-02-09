@@ -1,0 +1,520 @@
+<html>
+<!--Resolucio pantalla 1776*1000 pantalla de 32"-->
+
+<head>
+    <title>Dertosa BAR</title>
+    <style>
+        ul,
+        ol {
+            list-style: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code {
+            font-size: 1em;
+        }
+
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        body,
+        html,
+        p,
+        blockquote,
+        fieldset {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        a img,
+        :link img,
+        :visited img,
+        fieldset {
+            border: none;
+        }
+
+        input[type=submit],
+        input[type=reset],
+        input[type=button] {
+            *filter: chroma(color=#000000);
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 15px;
+            color: #000000;
+            font-weight: normal;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: white;
+            background: #588BFF;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: white;
+            background: #A0BDFF;
+            padding: 4px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 140%;
+        }
+
+        strong {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        em {
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .header {
+            font-family: Verdana;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            background-image: url("bg_header.jpg");
+            position: relative;
+        }
+
+        .header2 {
+            height: 5px;
+            margin-bottom: 0;
+            background-image: url("bg_header.jpg");
+        }
+
+        .menu {
+            font-size: 20px;
+            font-weight: bold;
+            height: 50px;
+            background: white;
+            position: relative;
+        }
+
+        .content {
+            padding: 10px;
+            margin: auto;
+            width: 980px;
+            position: relative;
+        }
+
+        .foot {
+            height: 150px;
+            background: #030B26;
+            position: relative;
+        }
+
+        .distribution {
+            position: relative;
+        }
+
+        .colum {
+            top: 10px;
+            right: 30px;
+            width: 200px;
+            position: absolute;
+            background: white;
+        }
+
+        .como {
+            position: relative;
+        }
+
+        .title-page {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .logod {
+            top: 10px;
+            left: 10px;
+            position: absolute;
+        }
+
+        .logodb {
+            height: 75px;
+        }
+
+        .redes {
+            padding-top: 5px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .item-menu {
+            padding-top: 11px;
+            text-align: center;
+            margin-right: 30px;
+            position: relative;
+        }
+
+        .img-redes {
+            height: 40px;
+        }
+
+        .pf {
+            background: white;
+            padding: 5px;
+            margin-bottom: 20px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+        }
+
+        .pf-oro {
+            padding: 40px;
+            margin: 30px auto 30px auto;
+            background: rgb(11, 136, 219);
+            border: solid 5px #FFAA00;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            width: 700px;
+            position: relative;
+        }
+
+        .img-intro {
+            right: 10px;
+            position: absolute;
+        }
+
+        .img-ser {
+            width: 300px;
+            height:210px;
+        }
+
+        .intro {
+            width: 650px;
+        }
+
+        .img-best {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transform: rotate(25deg);
+            z-index: 1;
+        }
+
+        .top-one {
+            width: 75px;
+        }
+
+        .oro {
+            border: solid 2px white;
+            background: #FFAA00;
+        }
+
+        .rest-img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .restaurant-1 {
+            position: relative;
+        }
+
+        .image {
+            position: absolute;
+            top: -70px;
+            margin-top: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .text {
+            color: white;
+            background: none;
+            margin-left: 170px;
+        }
+
+        .img-colabora {
+            left: 10px;
+            position: absolute;
+        }
+
+        .img-como {
+            width: 310px;
+        }
+
+        .colabora {
+            padding-left: 330px;
+            width: 650px;
+        }
+
+        .title-colabora {
+            text-align: right;
+        }
+
+        .redes-foot {
+            padding-top: 20px;
+            right: 350px;
+            position: absolute;
+        }
+
+        .img-redesf {
+            padding-right: 20px;
+            height: 60px;
+        }
+
+        .siguenos {
+            font-size: 20px;
+            color: white;
+            padding-top: 30px;
+            padding-left: 300px
+        }
+
+        .copyright {
+            font-size: 10px;
+            color: white;
+        }
+
+        .oferta {
+            bottom: 30px;
+            right: 30px;
+            outline: 6px dashed red;
+            box-shadow: 0 0 0 6px yellow;
+            background: black;
+            z-index: 2;
+            width: 300px;
+            height: 100px;
+            position: fixed;
+            animation: 1s animateBorder infinite;
+        }
+
+        .anuncio {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            text-shadow: 1px 1px 0 white;
+            font-weight: bold;
+            background: orange;
+            position: relative;
+        }
+
+        .precio {
+            font-size: 40px;
+            color: orange;
+            font-weight: bold;
+            right: 20px;
+            position: absolute;
+        }
+
+        .tipo-ofer {
+            font-size: 25px;
+            color: orange;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        .img-oferta {
+            top: -25px;
+            right: 15px;
+            transform: rotate(25deg);
+            position: absolute;
+        }
+
+        .img-cerveza {
+            width: 50px;
+        }
+
+        @keyframes animateBorder {
+            to {
+                outline-color: yellow;
+                box-shadow: 0 0 0 6px red;
+            }
+        }
+
+        #imagen {
+            width: 175px;
+            height: 150px;
+        }
+
+        .tapas {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        var imagenes = new Array('burger.jpg', 'carne.jpg', 'pescado.jpg', 'sandwich.jpg')
+        function rotarImagenes() {
+            var index = Math.floor((Math.random() * imagenes.length));
+            document.getElementById("imagen").src = imagenes[index];
+        }
+
+        onload = function () {
+            rotarImagenes();
+            setInterval(rotarImagenes, 4000);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <p class="title-page"><a href="pagina_principal.html">Dertosa BAR</a></p>
+        <p class="logo"><img class="logodb" src="logo_db.jpg" /></p>
+        <p class="logod"><img class="logodb" src="logo_db.jpg" /></p>
+    </div>
+    <div class="menu">
+        <p class="redes">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redes"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redes" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redes" src="twiter.jpg" /></a>
+        </p>
+        <p class="item-menu">
+            <a class="item-menu" href="pagina_principal.html">Inicio</a>
+            <a class="item-menu" href="restaurantes.html">Restaurantes</a>
+            <a class="item-menu" href="cercanos.html">Los más cercanos</a>
+        </p>
+    </div>
+    <p class="header2"></p>
+    <div class="distribution">
+        <div class="oferta" alt="" onclick="alert('Tu codigo promocional es 1865')">
+            <h1 class="anuncio">OFERTA</h1>
+            <p class="img-oferta"><img class="img-cerveza" src="cerveza.jpg" /></p>
+            <P class="precio">2,5€</P>
+            <p class="tipo-ofer">Tapa+Bevida</p>
+        </div>
+        <div class="colum">
+            <p class="tapas">Las mejores tapas<img src="" id="imagen"></p>
+        </div>
+        <div class="content">
+            <div class="pf">
+                <p class="img-intro"><img class="img-ser" src="mesas.jpg" /></p>
+                <h1>Que es Dertosa BAR?</h1>
+                <p class="intro">In lorem ante, <strong>mollis aliquet lectus ac</strong>, interdum vestibulum nisi.
+                    Cras pellentesque, libero at posuere gravida,
+                    ligula urna euismod velit, sed efficitur orci massa at nulla. Proin eget justo quis nisl ultricies
+                    molestie.
+                    Phasellus rutrum ex quis justo fermentum sagittis sed eget nulla. Fusce vulputate purus id sapien
+                    viverra hendrerit.
+                    Proin et risus ac justo consequat auctor. Mauris commodo luctus laoreet. <em>Vestibulum nec metus
+                        eu justo pellentesque</em>
+                    imperdiet. Cras viverra urna non libero facilisis blandit. Integer tristique mi sit amet lobortis
+                    dapibus. Curabitur viverra
+                    turpis eget ante venenatis, et aliquet nunc luctus. Vivamus scelerisque vitae magna nec maximus.
+                    Mauris eu leo semper erat
+                    ullamcorper tincidunt vitae id risus.
+                </p>
+            </div>
+            <div class="pf">
+                <h2>Como se crea Dertosa BAR?</h2>
+                <p>Integer auctor feugiat tortor, nec tincidunt lectus scelerisque et. Pellentesque sed metus mattis,
+                    sodales tellus et, interdum
+                    metus. Curabitur arcu est, pharetra facilisis lectus quis, blandit sodales massa. Donec id bibendum
+                    dui. Vivamus cursus, magna
+                    non maximus suscipit, diam elit consectetur massa, <strong>sed faucibus magna metus ullamcorper
+                        erat</strong>. Nam et semper nulla. Vestibulum
+                    accumsan mollis turpis, sit amet blandit diam ultricies vel. Integer vulputate ut enim vel
+                    imperdiet. Cras finibus, leo at
+                    maximus lobortis, orci quam egestas nisl, in dignissim metus nibh eget arcu. Quisque blandit
+                    fringilla neque, eget mollis urna
+                    vulputate tempor. In tellus lectus, varius nec nisi ut, tempor hendrerit nisl.
+                </p>
+            </div>
+            <div class="pf-oro">
+                <p class=img-best><img class="top-one" src="one.jpg" /></p>
+                <h1 class="oro">RESTAURENTE DEL MES</h1>
+                <div class=restaurant-1>
+                    <p class=image><img class="rest-img" src="restaurant1.jpg" /></p>
+                    <h1 class=text>name restaurant</h1>
+                    <p class=text>type food</p>
+                    <p class=text>valoration</p>
+                    <p class=text>contact</p>
+                    <p class=text>description</p>
+                </div>
+            </div>
+            <div class="pf">
+                <p class="img-colabora"><img class="img-como" src="colaboration.jpg" /></p>
+                <h1 class="title-colabora">Como colaborar?</h1>
+                <p class="colabora">Suspendisse potenti. Integer fermentum vitae nibh eget consectetur. Integer sit
+                    amet viverra nibh. Morbi viverra nibh eu mattis
+                    euismod. Ut blandit orci vitae placerat sagittis. Phasellus pharetra pretium lorem, id laoreet nisi
+                    bibendum vitae. In aliquet
+                    tortor nulla, non pulvinar lorem commodo mollis. Aliquam commodo eros ac lacinia auctor. Donec sed
+                    blandit mi. Curabitur quis
+                    posuere erat, eget convallis dui. Vivamus varius pulvinar mollis. Quisque nec erat blandit, lacinia
+                    nunc at, vestibulum odio.
+                    Nullam tincidunt suscipit feugiat. <em>Quisque vel auctor elit. Sed pharetra ipsum ornare molestie
+                        scelerisque.</em>
+                </p>
+                <p class="colabora">In lorem ante, mollis aliquet lectus ac, interdum vestibulum nisi. Cras
+                    pellentesque, libero at posuere gravida, ligula
+                    urna euismod velit, sed efficitur orci massa at nulla. Proin eget justo quis nisl ultricies
+                    molestie. Phasellus rutrum ex
+                    quis justo fermentum sagittis sed eget nulla. Fusce vulputate purus id sapien viverra hendrerit.
+                    Proin et risus ac justo
+                    consequat auctor. Mauris commodo luctus laoreet. Vestibulum nec metus eu justo pellentesque
+                    imperdiet. Cras viverra urna
+                    non libero facilisis blandit. Integer tristique mi sit amet lobortis dapibus. Curabitur viverra
+                    turpis eget ante venenatis,
+                    aliquet nunc luctus. Vivamus scelerisque vitae magna nec maximus. Mauris eu leo semper erat
+                    ullamcorper tincidunt vitae id
+                    risus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <p class="redes-foot">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redesf"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redesf" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redesf" src="twiter.jpg" /></a>
+        </p>
+        <p class="siguenos">Siguenos en las redes!</p>
+        <br />
+        <hr />
+        <div class="copyright">
+            <p>&copy; 2019 por Ferran Caubet Castells</p>
+        </div>
+    </div>
+</body>
+
+</html>

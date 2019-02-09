@@ -1,0 +1,356 @@
+<html>
+<!--Resolucio pantalla 1776*1000 pantalla de 32"-->
+
+<head>
+    <title>Dertosa BAR</title>
+    <style>
+        ul,
+        ol {
+            list-style: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code {
+            font-size: 1em;
+        }
+
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        body,
+        html,
+        p,
+        blockquote,
+        fieldset {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        a img,
+        :link img,
+        :visited img,
+        fieldset {
+            border: none;
+        }
+
+        input[type=submit],
+        input[type=reset],
+        input[type=button] {
+            *filter: chroma(color=#000000);
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 15px;
+            color: #000000;
+            font-weight: normal;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: white;
+            background: #A0BDFF;
+            padding: 4px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 140%;
+        }
+
+        strong {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        em {
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .header {
+            font-family: Verdana;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            background-image: url("bg_header.jpg");
+            position: relative;
+        }
+
+        .header2 {
+            height: 5px;
+            margin-bottom: 0;
+            background-image: url("bg_header.jpg");
+        }
+
+        .menu {
+            font-size: 20px;
+            font-weight: bold;
+            height: 50px;
+            background: white;
+            position: relative;
+        }
+
+        .content {
+            padding: 10px;
+            margin: auto;
+            width: 980px;
+            position: relative;
+            background: white;
+        }
+
+        .foot {
+            height: 150px;
+            background: #030B26;
+            position: relative;
+        }
+
+        .distribution {
+            position: relative;
+        }
+
+        .title-page {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .logod {
+            top: 10px;
+            left: 10px;
+            position: absolute;
+        }
+
+        .logodb {
+            height: 75px;
+        }
+
+        .redes {
+            padding-top: 5px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .item-menu {
+            padding-top: 11px;
+            text-align: center;
+            padding-right: 30px;
+            position: relative;
+        }
+
+        .img-redes {
+            height: 40px;
+        }
+
+        .rest-img {
+            margin:40px 0 0 20px;
+            position: absolute;
+        }
+
+        .description {
+            padding-left: 350px;
+            margin-bottom: 20px;
+        }
+
+        .sugerencias{margin-top:-40px;padding-left:500px;}
+
+        .element-sug{padding-bottom:10px;}
+
+        #imagen {
+            width: 300px;
+            height: 275px;
+        }
+
+        #map-canvas {  border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            margin:0 auto 20px auto;
+            width:900px;
+            height:400px; 
+        }
+
+        .infoimg{ margin-top:10px;
+            height:75px;
+            border-radius: 50%;
+            overflow: hidden;
+            position:absolute;
+        }
+
+        .titol_info{background:white;color:Black;
+            margin:0 0 5px 100px;position:relative;
+        }
+
+        .text_info{margin:0 0 3px 100px;}
+
+        .redes-foot {
+            padding-top: 20px;
+            right: 350px;
+            position: absolute;
+        }
+
+        .img-redesf {
+            padding-right: 20px;
+            height: 60px;
+        }
+
+        .siguenos {
+            font-size: 20px;
+            color: white;
+            padding-top: 30px;
+            padding-left: 300px
+        }
+
+        .copyright {
+            font-size: 10px;
+            color: white;
+        }
+    </style>
+    <script>
+        var imagenes = new Array('logo_mano.jpg', 'int_mano.jpg', 'vermut_mano.jpg', 'coctel_mano.jpg')
+        function rotarImagenes() {
+            var index = Math.floor((Math.random() * imagenes.length));
+            document.getElementById("imagen").src = imagenes[index];
+        }
+
+        onload = function () {
+            rotarImagenes();
+            setInterval(rotarImagenes, 4000);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_E38eEb5Z13t02OsR45ejvg7wX_1J-Ks&v=3.exp"></script>
+    <script type="text/javascript">
+        var map;
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(40.810301303892615, 0.5218666791915894)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+            
+            var restaurant = { lat: 40.810301303892615, lng: 0.5218666791915894, name: 'Manolitos',loc:'C/ Cervantes, 2', tel:'977 09 21 14',
+            img:'logo_mano.jpg' };
+            
+            crearMarker(restaurant);
+        }
+        
+        function crearMarker(rinfo) {
+            var point = new google.maps.LatLng(rinfo.lat,rinfo.lng);
+            var pOptions = {
+                position: point, 
+                map: map, 
+                title: rinfo.name
+            };
+            var marker = new google.maps.Marker(pOptions);	
+            var wopt = {
+                content:'<p><img class="infoimg" src="' + rinfo.img + '"/></p>' + 
+                '<h2 class="titol_info">' + rinfo.name + '</h2>'+ '<p class="text_info">' + rinfo.loc + '</p>'
+                + '<p class="text_info">' + rinfo.tel + '</p>' 
+                    
+            }
+            var infow = new google.maps.InfoWindow(wopt);
+            google.maps.event.addListener(marker, 'click', 	function (event) {
+                infow.open(map,marker);
+            });
+            
+        }
+        
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>		
+</head>
+
+<body>
+    <div class="header">
+        <p class="title-page"><a href="pagina_principal.html">Dertosa BAR</a></p>
+        <p class="logo"><img class="logodb" src="logo_db.jpg" /></p>
+        <p class="logod"><img class="logodb" src="logo_db.jpg" /></p>
+    </div>
+    <div class="menu">
+        <p class="redes">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redes"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redes" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redes" src="twiter.jpg" /></a>
+        </p>
+        <p class="item-menu">
+            <a class="item-menu" href="pagina_principal.html">Inicio</a>
+            <a class="item-menu" href="restaurantes.html">Restaurantes</a>
+            <a class="item-menu" href="cercanos.html">Los más cercanos</a>
+        </p>
+    </div>
+    <p class="header2"></p>
+    <div class="content">
+        <p class="rest-img"><img src="" id="imagen"></p>
+        <h1 class="description">Manolitos</h1>
+        <p class="description"><strong>Descripción:</strong> Tapes, esmorzars, menús, còctels, delicatessen, selecció
+            de
+            vins i caves.Lugar muy agradable, muy acogedor, variedad de vinos i cervezas.</p>
+        <p class="description"><strong>Sugerencias:</strong>
+            <li class="sugerencias">
+                <ul class="element-sug"> Vermut</ul>
+                <ul class="element-sug"> Patatas Brabas</ul>
+                <ul class="element-sug"> Entrecot de bou amb rovellons</ul>
+                <ul class="element-sug"> Hamburguesa de salmó</ul>
+            </li>
+        </p>
+        <p class="description"><strong>Teléfono:</strong> 977 09 21 14</p>
+        <p class="description"><strong>Localización:</strong> C/ Cervantes, 2</p>
+        <div id="map-canvas"></div>
+    </div>
+
+    <div class="foot">
+        <p class="redes-foot">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redesf"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redesf" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redesf" src="twiter.jpg" /></a>
+        </p>
+        <p class="siguenos">Siguenos en las redes!</p>
+        <br />
+        <hr />
+        <div class="copyright">
+            <p>&copy; 2019 por Ferran Caubet Castells</p>
+        </div>
+    </div>
+</body>
+
+</html>

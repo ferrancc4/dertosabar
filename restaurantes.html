@@ -1,0 +1,397 @@
+<html>
+<!--Resolucio pantalla 1776*1000 pantalla de 32"-->
+
+<head>
+    <title>Dertosa BAR</title>
+    <style>
+        ul,
+        ol {
+            list-style: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code {
+            font-size: 1em;
+        }
+
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        body,
+        html,
+        p,
+        blockquote,
+        fieldset {
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        a img,
+        :link img,
+        :visited img,
+        fieldset {
+            border: none;
+        }
+
+        input[type=submit],
+        input[type=reset],
+        input[type=button] {
+            *filter: chroma(color=#000000);
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 15px;
+            color: #000000;
+            font-weight: normal;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: white;
+            background: #588BFF;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: white;
+            background: #A0BDFF;
+            padding: 4px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 140%;
+        }
+
+        strong {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        em {
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .header {
+            font-family: Verdana;
+            font-size: 30px;
+            font-weight: bold;
+            height: 100px;
+            background-image: url("bg_header.jpg");
+            position: relative;
+        }
+
+        .header2 {
+            height: 5px;
+            margin-bottom: 0;
+            background-image: url("bg_header.jpg");
+        }
+
+        .menu {
+            font-size: 20px;
+            font-weight: bold;
+            height: 50px;
+            background: white;
+            position: relative;
+        }
+
+        .content {
+            padding: 10px;
+            margin: auto;
+            width: 980px;
+            position: relative;
+            background: white;
+        }
+
+        .foot {
+            height: 150px;
+            background: #030B26;
+            position: relative;
+        }
+
+        .distribution {
+            position: relative;
+
+        }
+
+        .title-page {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .logod {
+            top: 10px;
+            left: 10px;
+            position: absolute;
+        }
+
+        .logodb {
+            height: 75px;
+        }
+
+        .redes {
+            padding-top: 5px;
+            right: 10px;
+            position: absolute;
+        }
+
+        .item-menu {
+            padding-top: 11px;
+            text-align: center;
+            padding-right: 30px;
+            position: relative;
+        }
+
+        .img-redes {
+            height: 40px;
+        }
+
+        .rest-img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .restaurant-1 {
+            position: relative;
+            padding: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 410px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            background: #DDDDDD;
+            border: solid 1px #0000ff;
+        }
+
+        .image {
+            position: absolute;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .rating {
+            font-size: 22px;
+            color: orange;
+            margin-left: 170px;
+        }
+
+        .text {
+            margin: 15px 0 0 170px;
+        }
+
+        .restaurant-2 {
+            position: absolute;
+            padding: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 410px;
+            right: 0;
+            top: 0;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            background: #DDDDDD;
+            border: solid 1px #0000ff;
+        }
+
+        .restaurant-3 {
+            position: absolute;
+            padding: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 410px;
+            right: 0;
+            top: 210px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            background: #DDDDDD;
+            border: solid 1px #0000ff;
+        }
+        .restaurant-4 {
+            position: absolute;
+            padding: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            height: 150px;
+            width: 410px;
+            right: 0;
+            top: 420px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+            background: #DDDDDD;
+            border: solid 1px #0000ff;
+        }
+
+        .redes-foot {
+            padding-top: 20px;
+            right: 350px;
+            position: absolute;
+        }
+
+        .img-redesf {
+            padding-right: 20px;
+            height: 60px;
+        }
+
+        .siguenos {
+            font-size: 20px;
+            color: white;
+            padding-top: 30px;
+            padding-left: 300px
+        }
+
+        .copyright {
+            font-size: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p class="title-page"><a href="pagina_principal.html">Dertosa BAR</a></p>
+        <p class="logo"><img class="logodb" src="logo_db.jpg" /></p>
+        <p class="logod"><img class="logodb" src="logo_db.jpg" /></p>
+    </div>
+    <div class="menu">
+        <p class="redes">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redes"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redes" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redes" src="twiter.jpg" /></a>
+        </p>
+        <p class="item-menu">
+            <a class="item-menu" href="pagina_principal.html">Inicio</a>
+            <a class="item-menu" href="restaurantes.html">Restaurantes</a>
+            <a class="item-menu" href="cercanos.html">Los más cercanos</a>
+        </p>
+    </div>
+    <p class="header2"></p>
+    <div class="content">
+        <div class="distribution">
+            <a href="restaurant1.html">
+                <div class=restaurant-1>
+                    <p class="image"><img class="rest-img" src="logo_mano.jpg" /></p>
+                    <h1 class="text">Manolitos</h1>
+                    <p class="text"> Tapes, esmorzars, menús, còctels</p>
+                    <p class="text"> 977 09 21 14</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </a>
+            <a href="restaurant2.html">
+                <div class=restaurant-2>
+                    <p class="image"><img class="rest-img" src="logo_botanic.jpg" /></p>
+                    <h1 class="text">Botànic</h1>
+                    <p class="text"> Comidas, Cenas, Bebidas. Cocina Mediterránea y Japonesa</p>
+                    <p class="text"> 977 44 52 56</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                </div>
+            </a>
+            <a href="restaurant3.html">
+                <div class=restaurant-1>
+                    <p class="image"><img class="rest-img" src="logo_banys.jpg" /></p>
+                    <h1 class="text">Los Banys</h1>
+                    <p class="text"> Tapas, menú, cenas</p>
+                    <p class="text"> 977 44 36 44</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </a>
+            <a href="restaurant4.html">
+                <div class=restaurant-3>
+                    <p class="image"><img class="rest-img" src="logo_lizarran.jpg" /></p>
+                    <h1 class="text">Lizarran</h1>
+                    <p class="text"> Pinchos, raciones y cerveza</p>
+                    <p class="text"> 977 44 53 37</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                </div>
+            </a>
+            <a href="http://www.javasbeer.com/">
+                <div class=restaurant-1>
+                    <p class="image"><img class="rest-img" src="logo_javas.jpg" /></p>
+                    <h1 class="text">Java's Beer</h1>
+                    <p class="text"> Tapes, menús, cerbeza</p>
+                    <p class="text"> 877 05 65 05</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/restaurantcastells/">
+                <div class=restaurant-4>
+                    <p class="image"><img class="rest-img" src="logo_castells.jpg" /></p>
+                    <h1 class="text">Castells</h1>
+                    <p class="text"> Tapes, esmorzars, menús</p>
+                    <p class="text"> 669 73 79 51</p>
+                    <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="foot">
+        <p class="redes-foot">
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redesf"
+                    src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redesf" src="facebook.jpg" /></a>
+            <a href="http://www.google.com" title="twitter"><img class="img-redesf" src="twiter.jpg" /></a>
+        </p>
+        <p class="siguenos">Siguenos en las redes!</p>
+        <br />
+        <hr />
+        <div class="copyright">
+            <p>&copy; 2019 por Ferran Caubet Castells</p>
+        </div>
+    </div>
+</body>
+
+</html>
