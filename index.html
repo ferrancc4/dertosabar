@@ -145,7 +145,7 @@
             width: 200px;
             position: absolute;
             background: white;
-            z-index:1 ;
+            z-index: 1;
         }
 
         .como {
@@ -224,7 +224,7 @@
 
         .img-ser {
             width: 300px;
-            height:210px;
+            height: 210px;
         }
 
         .intro {
@@ -392,6 +392,12 @@
             rotarImagenes();
             setInterval(rotarImagenes, 4000);
         }
+
+        var quehora = new Date();
+
+        var hora = quehora.getHours();
+        var minutos = quehora.getMinutes();
+    
     </script>
 </head>
 
@@ -403,9 +409,10 @@
     </div>
     <div class="menu">
         <p class="redes">
-            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redes"
-                    src="insta.jpg" /></a>
-            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redes" src="facebook.jpg" /></a>
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img
+                    class="img-redes" src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redes"
+                    src="facebook.jpg" /></a>
             <a href="http://www.google.com" title="twitter"><img class="img-redes" src="twiter.jpg" /></a>
         </p>
         <p class="item-menu">
@@ -416,7 +423,7 @@
     </div>
     <p class="header2"></p>
     <div class="distribution">
-        <div class="oferta" alt="" onclick="alert('Tu codigo promocional es 1865')">
+        <div class="oferta" alt="" onclick="alert('Tu codigo promocional es ->'+(hora*minutos))">
             <h1 class="anuncio">OFERTA</h1>
             <p class="img-oferta"><img class="img-cerveza" src="cerveza.jpg" /></p>
             <P class="precio">2,5€</P>
@@ -467,7 +474,8 @@
                     <h1 class=text>Restaurant Cristal</h1>
                     <p class=text>Esmorzars, dinars i sopars. Menu del dia</p>
                     <p class=text>977 44 36 89</p>
-                    <p class=text>Muy buenos platos y como si estuvieras en casa un trato muy afable y en un ambiente muy correcto muy recomendable</p>
+                    <p class=text>Muy buenos platos y como si estuvieras en casa un trato muy afable y en un ambiente
+                        muy correcto muy recomendable</p>
                 </div>
             </div>
             <div class="pf">
@@ -503,9 +511,10 @@
     </div>
     <div class="foot">
         <p class="redes-foot">
-            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img class="img-redesf"
-                    src="insta.jpg" /></a>
-            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redesf" src="facebook.jpg" /></a>
+            <a href="https://www.instagram.com/explore/tags/restaurantes/?hl=es" title="Instagram"><img
+                    class="img-redesf" src="insta.jpg" /></a>
+            <a href="https://www.facebook.com/Restaurantescom/" title="facebook"><img class="img-redesf"
+                    src="facebook.jpg" /></a>
             <a href="http://www.google.com" title="twitter"><img class="img-redesf" src="twiter.jpg" /></a>
         </p>
         <p class="siguenos">Siguenos en las redes!</p>
